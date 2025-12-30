@@ -33,3 +33,26 @@ function playRound(humanChoice, comChoice) {
         return alert('invalid Choice! Choice must be rock, paper, or scissors');
     }
 }
+
+
+function playGame() {
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`)
+
+    if (humanScore > computerScore) {
+        console.log('You Won!')
+    } else if (computerScore > humanScore) {
+        console.log('You Lose!')
+    } else {
+        console.log('Tie!')
+    }
+}
